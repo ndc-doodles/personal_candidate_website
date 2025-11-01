@@ -9,9 +9,10 @@ h1{
 
 
 
-html{
-    overflow: hidden;
+html, body {
+  overflow: hidden;
 }
+
   .reveal-word {
       opacity: 0;
       transform: translateY(20px);
