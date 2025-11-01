@@ -10,7 +10,7 @@ h1{
 
 
 html, body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
   .reveal-word {
