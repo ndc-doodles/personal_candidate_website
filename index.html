@@ -92,24 +92,34 @@
 
   const toggleMenu = () => {
     const isActive = hamburger.classList.toggle("active");
+
     if (isActive) {
+      // Show menu (slide in from right)
       mobileMenu.classList.remove("translate-x-full");
+      mobileMenu.classList.add("translate-x-0");
       overlay.classList.remove("hidden");
+      document.body.style.overflow = "hidden"; // Disable background scroll
     } else {
+      // Hide menu (slide out to right)
       mobileMenu.classList.add("translate-x-full");
+      mobileMenu.classList.remove("translate-x-0");
       overlay.classList.add("hidden");
+      document.body.style.overflow = ""; // Re-enable scroll
     }
   };
 
   hamburger.addEventListener("click", toggleMenu);
 
-  // Close menu when clicking outside
+  // Close menu when clicking outside (overlay)
   overlay.addEventListener("click", () => {
     hamburger.classList.remove("active");
     mobileMenu.classList.add("translate-x-full");
+    mobileMenu.classList.remove("translate-x-0");
     overlay.classList.add("hidden");
+    document.body.style.overflow = ""; // Re-enable scroll
   });
 </script>
+
 
 <!-- === Styles === -->
 <style>
