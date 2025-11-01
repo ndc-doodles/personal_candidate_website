@@ -1,0 +1,71 @@
+  
+h1{
+     font-family: "Montserrat", sans-serif;
+}
+
+.reveal-word{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+html{
+    overflow: hidden;
+}
+  .reveal-word {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+      display: inline-block;
+      margin: 0 6px;
+    }
+    .reveal-word.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 1px; /* optional: controls underline thickness */
+  text-underline-offset: 8px; /* correct syntax */
+  color: white; /* if you want the text (and underline) in white */
+}
+.typing-text {
+  overflow: hidden;              /* hide overflowing text */
+  white-space: nowrap;           /* keep text in one line */
+  border-right: 4px solid rgba(255,255,255,0.5); /* blinking cursor */
+  width: 0;                      /* start hidden */
+  animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
+}
+
+/* typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* blinking cursor effect */
+@keyframes blink {
+  50% { border-color: transparent }
+}
+.reveal-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.career-image.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.career-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  
