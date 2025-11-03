@@ -10,18 +10,15 @@
 
 <body class="bg-white">
 
-<nav
-  id="navbar"
-  class="fixed top-0 left-0 w-full z-50 bg-transparent py-6 transition-all duration-500"
->
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" class="fixed top-0 left-0 w-full z-[1000] bg-transparent py-6 transition-all duration-500">
   <div class="max-w-7xl mx-auto flex justify-between items-center px-8">
+    
     <!-- Candidate Logo/Name -->
     <h1 class="text-xl font-bold uppercase tracking-wide text-white">Annamalai</h1>
 
     <!-- Desktop Menu -->
-    <ul
-      class="desktop-menu hidden md:flex space-x-10 font-medium text-md uppercase"
-    >
+    <ul class="desktop-menu hidden md:flex space-x-10 font-medium text-md uppercase">
       <li><a href="#" class="text-white hover:text-gray-200 transition">Home</a></li>
       <li><a href="#" class="text-white hover:text-gray-200 transition">About</a></li>
       <li><a href="#" class="text-white hover:text-gray-200 transition">Vision</a></li>
@@ -29,35 +26,19 @@
     </ul>
 
     <!-- Mobile Hamburger -->
-    <div class="mobile-menu md:hidden cursor-pointer z-[60]">
-      <svg
-        viewBox="0 0 32 42"
-        xmlns="http://www.w3.org/2000/svg"
-        id="hamburger"
-        width="36"
-        height="36"
-        stroke="white"
-        stroke-width="2.5"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="transition-all duration-500"
-      >
+    <div class="mobile-menu md:hidden cursor-pointer z-[1100]">
+      <svg id="hamburger" viewBox="0 0 32 42" xmlns="http://www.w3.org/2000/svg"
+        width="36" height="36" stroke="white" stroke-width="2.5" fill="none"
+        stroke-linecap="round" stroke-linejoin="round" class="transition-all duration-500">
         <g transform="matrix(1,0,0,1,-389.5,-264.004)">
           <g id="arrow_left2">
             <g transform="matrix(1,0,0,1,0,5)">
-              <path
-                id="top"
-                d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967"
-              />
+              <path id="top"
+                d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967" />
             </g>
-            <g
-              transform="matrix(1,1.22465e-16,1.22465e-16,-1,0.00024296,564.935)"
-            >
-              <path
-                id="bottom"
-                d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967"
-              />
+            <g transform="matrix(1,1.22465e-16,1.22465e-16,-1,0.00024296,564.935)">
+              <path id="bottom"
+                d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967" />
             </g>
             <path id="middle" d="M390,284.967L420,284.967" />
           </g>
@@ -67,24 +48,17 @@
   </div>
 
   <!-- Overlay -->
-  <div
-    id="overlay"
-    class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-40"
-  ></div>
+  <div id="overlay" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[9998]"></div>
 
-  <!-- Mobile Slide Menu (from Right) -->
-  <div
-    id="mobileMenu"
-    class="fixed top-0 right-0 h-full w-3/4 bg-black text-white text-center space-y-6 pt-24 uppercase transform translate-x-full transition-transform duration-500 z-50"
-  >
+  <!-- Mobile Sidebar -->
+  <div id="mobileMenu"
+    class="fixed top-0 right-0 h-full w-3/4 bg-black text-white text-center space-y-6 pt-24 uppercase transform translate-x-full transition-transform duration-500 z-[9999]">
     <a href="#" class="block text-[#F97D09]">Home</a>
     <a href="#" class="block hover:text-gray-300">About</a>
     <a href="#" class="block hover:text-gray-300">Vision</a>
     <a href="#" class="block hover:text-gray-300">Gallery</a>
   </div>
 </nav>
-
-<!-- === Script === -->
 <script>
   const hamburger = document.getElementById("hamburger");
   const mobileMenu = document.getElementById("mobileMenu");
@@ -94,13 +68,11 @@
     const isActive = hamburger.classList.toggle("active");
 
     if (isActive) {
-      // Show menu (slide in from right)
       mobileMenu.classList.remove("translate-x-full");
       mobileMenu.classList.add("translate-x-0");
       overlay.classList.remove("hidden");
       document.body.style.overflow = "hidden"; // Disable background scroll
     } else {
-      // Hide menu (slide out to right)
       mobileMenu.classList.add("translate-x-full");
       mobileMenu.classList.remove("translate-x-0");
       overlay.classList.add("hidden");
@@ -109,50 +81,52 @@
   };
 
   hamburger.addEventListener("click", toggleMenu);
-
-  // Close menu when clicking outside (overlay)
   overlay.addEventListener("click", () => {
     hamburger.classList.remove("active");
     mobileMenu.classList.add("translate-x-full");
     mobileMenu.classList.remove("translate-x-0");
     overlay.classList.add("hidden");
-    document.body.style.overflow = ""; // Re-enable scroll
+    document.body.style.overflow = "";
   });
 </script>
 
-
-<!-- === Styles === -->
+<!-- ===== Styles ===== -->
 <style>
-  #top,
-  #bottom {
+  #top, #bottom {
     stroke-dasharray: 30, 75.39;
     transition: all 0.5s ease;
   }
-
-  svg.active #top,
-  svg.active #bottom {
+  svg.active #top, svg.active #bottom {
     stroke-dasharray: 75.39;
     stroke-dashoffset: -60;
   }
-
   #middle {
     transition: opacity 0.5s ease;
   }
-
   svg.active #middle {
     opacity: 0;
   }
 
-  @media (max-width: 767px) {
-    .desktop-menu {
-      display: none;
-    }
-    .mobile-menu {
-      display: block;
-    }
+  /* Mobile menu priority + solid background fix */
+  #mobileMenu {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 75vw;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 99999 !important;
+    overflow-y: auto;
+  }
+
+  #overlay {
+    position: fixed !important;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 99998 !important;
   }
 </style>
-
 
 <!-- === Hero Section === -->
 <section class="relative flex items-center justify-center h-screen overflow-hidden flex-col md:flex-row">
