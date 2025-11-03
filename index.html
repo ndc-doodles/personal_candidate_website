@@ -9,7 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Geist:wght@100..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"></head>
 
 <body class="bg-white">
-
 <!-- ===== NAVBAR ===== -->
 <nav id="navbar" class="fixed top-0 left-0 w-full z-[1000] bg-transparent py-6 transition-all duration-500">
   <div class="max-w-7xl mx-auto flex justify-between items-center px-8">
@@ -46,47 +45,72 @@
       </svg>
     </div>
   </div>
-
-  <!-- Overlay -->
-  <div id="overlay" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[9998]"></div>
-
-  <!-- Mobile Sidebar -->
-  <div id="mobileMenu"
-    class="fixed top-0 right-0 h-full w-3/4 bg-black text-white text-center space-y-6 pt-24 uppercase transform translate-x-full transition-transform duration-500 z-[9999]">
-    <a href="#" class="block text-[#F97D09]">Home</a>
-    <a href="#" class="block hover:text-gray-300">About</a>
-    <a href="#" class="block hover:text-gray-300">Vision</a>
-    <a href="#" class="block hover:text-gray-300">Gallery</a>
-  </div>
 </nav>
+
+<!-- Overlay -->
+<div id="overlay" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[9998]"></div>
+
+<!-- Mobile Sidebar -->
+<div id="mobileMenu"
+  class="fixed top-0 right-0 h-full w-3/4 bg-black text-white space-y-8 pt-24 px-8 uppercase transform translate-x-full transition-transform duration-500 z-[9999]">
+  
+  <!-- Close Icon inside sidebar -->
+  <div class="absolute top-6 right-6 cursor-pointer" id="closeBtn">
+    <svg viewBox="0 0 32 42" xmlns="http://www.w3.org/2000/svg"
+      width="36" height="36" stroke="white" stroke-width="2.5" fill="none"
+      stroke-linecap="round" stroke-linejoin="round" class="transition-all duration-500 active">
+      <g transform="matrix(1,0,0,1,-389.5,-264.004)">
+        <g id="arrow_left2">
+          <g transform="matrix(1,0,0,1,0,5)">
+            <path id="top"
+              d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967" />
+          </g>
+          <g transform="matrix(1,1.22465e-16,1.22465e-16,-1,0.00024296,564.935)">
+            <path id="bottom"
+              d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967" />
+          </g>
+          <path id="middle" d="M390,284.967L420,284.967" />
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <a href="#" class="block text-[#F97D09]">Home</a>
+  <a href="#" class="block hover:text-gray-300">About</a>
+  <a href="#" class="block hover:text-gray-300">Vision</a>
+  <a href="#" class="block hover:text-gray-300">Gallery</a>
+</div>
+
+
+<!-- ===== Script ===== -->
 <script>
   const hamburger = document.getElementById("hamburger");
   const mobileMenu = document.getElementById("mobileMenu");
   const overlay = document.getElementById("overlay");
+  const closeBtn = document.getElementById("closeBtn");
 
-  const toggleMenu = () => {
-    const isActive = hamburger.classList.toggle("active");
-
-    if (isActive) {
-      mobileMenu.classList.remove("translate-x-full");
-      mobileMenu.classList.add("translate-x-0");
-      overlay.classList.remove("hidden");
-      document.body.style.overflow = "hidden"; // Disable background scroll
-    } else {
-      mobileMenu.classList.add("translate-x-full");
-      mobileMenu.classList.remove("translate-x-0");
-      overlay.classList.add("hidden");
-      document.body.style.overflow = ""; // Re-enable scroll
-    }
+  const openMenu = () => {
+    hamburger.classList.add("active");
+    mobileMenu.classList.remove("translate-x-full");
+    overlay.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
   };
 
-  hamburger.addEventListener("click", toggleMenu);
-  overlay.addEventListener("click", () => {
+  const closeMenu = () => {
     hamburger.classList.remove("active");
     mobileMenu.classList.add("translate-x-full");
-    mobileMenu.classList.remove("translate-x-0");
     overlay.classList.add("hidden");
     document.body.style.overflow = "";
+  };
+
+  hamburger.addEventListener("click", openMenu);
+  closeBtn.addEventListener("click", closeMenu);
+  overlay.addEventListener("click", closeMenu);
+
+  window.addEventListener("scroll", () => {
+    if (!overlay.classList.contains("hidden")) {
+      overlay.style.position = "fixed";
+    }
   });
 </script>
 
@@ -96,25 +120,29 @@
     stroke-dasharray: 30, 75.39;
     transition: all 0.5s ease;
   }
-  svg.active #top, svg.active #bottom {
+
+  #hamburger.active #top, #hamburger.active #bottom,
+  #closeBtn svg.active #top, #closeBtn svg.active #bottom {
     stroke-dasharray: 75.39;
     stroke-dashoffset: -60;
   }
+
   #middle {
     transition: opacity 0.5s ease;
   }
-  svg.active #middle {
+
+  #hamburger.active #middle,
+  #closeBtn svg.active #middle {
     opacity: 0;
   }
 
-  /* Mobile menu priority + solid background fix */
   #mobileMenu {
     position: fixed !important;
     top: 0;
     right: 0;
     height: 100vh;
     width: 75vw;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(0, 0, 0, 0.97);
     z-index: 99999 !important;
     overflow-y: auto;
   }
@@ -122,11 +150,16 @@
   #overlay {
     position: fixed !important;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
     z-index: 99998 !important;
   }
+
+  #closeBtn svg path {
+    stroke: white;
+  }
 </style>
+
 
 <!-- === Hero Section === -->
 <section class="relative flex items-center justify-center h-screen overflow-hidden flex-col md:flex-row">
