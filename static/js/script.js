@@ -129,44 +129,36 @@ document.addEventListener("DOMContentLoaded", () => {
 // JAVASCRIPT FOR SWITCHING EVENTS IN INDEX PAGE
 
     const events = [
-      {
-        title: "Youth Empowerment Rally",
-        date: "Held on October 20, 2025 - Coimbatore",
-        description:
-          "A vibrant gathering led by Annamalai to inspire young minds towards leadership, innovation and community service - promoting unity and progress across Tamil Nadu.",
-        image: "./static/images/meeting.jpg",
-      },
-      {
-        title: "Farmers' Support Meet",
-        date: "Held on September 15, 2025 - Madurai",
-        description:
-          "Annamalai addressed thousands of farmers, assuring policies to protect agriculture and empower rural communities with modern tools and fair market prices.",
-        image:
-          "https://th-i.thgim.com/public/incoming/a5huht/article65513329.ece/alternates/LANDSCAPE_1200/IMG_10217_6_6_2022_18_34_3_1_DP9T3FJU.jpg",
-      },
-      {
-        title: "Women's Safety & Leadership Drive",
-        date: "Held on August 5, 2025 - Chennai",
-        description:
-          "A statewide campaign focused on women’s empowerment, safety and leadership programs that promote social equality and self-reliance.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQV4VHU5owcmgkR3x1xzoCnY0VGCLfghHrcw&s",
-      },
-      {
-        title: "Education for All Initiative",
-        date: "Held on July 10, 2025 - Salem",
-        description:
-          "A mission to uplift underprivileged students through scholarships and infrastructure development in rural schools.",
-        image: "./static/images/education.jpg",
-      },
-      {
-        title: "Clean Tamil Nadu Campaign",
-        date: "Held on June 12, 2025 - Tiruchirapalli",
-        description:
-          "A large-scale public awareness event promoting cleanliness, sustainability and eco-friendly habits across Tamil Nadu.",
-        image: "./static/images/clean.jpg",
-      },
-    ];
+  {
+    title: "Launch of Phase-5 – ‘Makkalai Kaappom, Thamizhagathai Meetpom’ Statewide Yatra",
+    date: "Held from September 17 – 26, 2025 – starting at Dharmapuri (TN)",
+    description:
+      "EPS launched the fifth phase of his statewide campaign ‘Makkalai Kaappom, Thamizhagathai Meetpom’ covering Dharmapuri, Namakkal, The Nilgiris, Dindigul and Karur districts through 19 public meetings — aiming to engage with citizens across Tamil Nadu and reinforce his party’s development agenda. :contentReference[oaicite:1]{index=1}",
+    image: "./static/images/statewide_yatra.jpg",
+  },
+  {
+    title: "Meeting with Union Home Minister Amit Shah in Delhi",
+    date: "September 16, 2025 – New Delhi",
+    description:
+      "EPS along with senior leaders of his party met Amit Shah in Delhi — publicly positioning the agenda for Tamil Nadu and clarifying his firm stance regarding internal party unity ahead of the 2026 Assembly elections. :contentReference[oaicite:3]{index=3}",
+    image: "./static/images/eps_delhi_meet.jpg",
+  },
+  {
+    title: "Public Rally at Thiruparankundram – Madurai (Property-Tax Scam Exposé)",
+    date: "September 2, 2025 – Madurai",
+    description:
+      "During his campaign tour in Madurai, EPS addressed a rally in Thiruparankundram and alleged the ruling party was shielding the mayor in a large property-tax scam; he pledged a transparent investigation if his party returns to power. :contentReference[oaicite:4]{index=4}",
+    image: "./static/images/madurai_rally.jpg",
+  },
+  {
+  title: "AIADMK Public Meeting – Salem District Development Rally",
+  date: "October 5, 2025 – Salem, Tamil Nadu",
+  description:
+    "Edappadi K. Palaniswami (EPS) addressed a massive public gathering in his home district of Salem, emphasizing infrastructure expansion, industrial growth, and rural employment opportunities. He reaffirmed his commitment to transparent governance and inclusive development across Tamil Nadu.",
+  image: "./static/images/salem_public_meet.jpg",
+},
+
+];
 
     let currentIndex = 0;
 

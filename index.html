@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- CHANGE NAME AND CONTENT -->
-  <title>K. Annamalai | Leadership with Vision</title>
+  <title>K. EPS | Leadership with Vision</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./static/css/style.css">
   <link
@@ -16,22 +16,49 @@
 <body class="bg-white">
 
 
-<nav id="navbar" class="fixed top-0 left-0 w-full z-[1000] bg-transparent py-6 transition-all duration-500">
-  <div class="max-w-7xl mx-auto flex justify-between items-center px-8">
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-[1000] bg-transparent py-6 transition-all duration-500">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-8">
 
-    <h1 class="text-xl font-bold uppercase tracking-wide text-white">Annamalai</h1>
+      <h1 class="text-xl font-bold uppercase tracking-wide text-white">EPS</h1>
 
-    <ul class="desktop-menu hidden md:flex space-x-10 font-medium text-md uppercase">
-      <li><a href="#" class="text-white hover:text-gray-200 transition active">Home</a></li>
-      <li><a href="#about" class="text-white hover:text-gray-200 transition">About</a></li>
-      <li><a href="#vision" class="text-white hover:text-gray-200 transition">Vision</a></li>
-      <li><a href="#contact" class="text-white hover:text-gray-200 transition">Contact</a></li>
-    </ul>
+      <ul class="desktop-menu hidden md:flex space-x-10 font-medium text-md uppercase">
+        <li><a href="#" class="text-white hover:text-gray-200 transition active">Home</a></li>
+        <li><a href="#about" class="text-white hover:text-gray-200 transition">About</a></li>
+        <li><a href="#vision" class="text-white hover:text-gray-200 transition">Vision</a></li>
+        <li><a href="#contact" class="text-white hover:text-gray-200 transition">Contact</a></li>
+      </ul>
 
-    <div class="mobile-menu md:hidden cursor-pointer z-[1100]">
-      <svg id="hamburger" viewBox="0 0 32 42" xmlns="http://www.w3.org/2000/svg" width="36" height="36" stroke="white"
+      <div class="mobile-menu md:hidden cursor-pointer z-[1100]">
+        <svg id="hamburger" viewBox="0 0 32 42" xmlns="http://www.w3.org/2000/svg" width="36" height="36" stroke="white"
+          stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"
+          class="transition-all duration-500">
+          <g transform="matrix(1,0,0,1,-389.5,-264.004)">
+            <g id="arrow_left2">
+              <g transform="matrix(1,0,0,1,0,5)">
+                <path id="top"
+                  d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967" />
+              </g>
+              <g transform="matrix(1,1.22465e-16,1.22465e-16,-1,0.00024296,564.935)">
+                <path id="bottom"
+                  d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967" />
+              </g>
+              <path id="middle" d="M390,284.967L420,284.967" />
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </nav>
+
+  <div id="overlay" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[9998]"></div>
+
+  <div id="mobileMenu"
+    class="fixed top-0 right-0 h-full w-3/4 bg-black text-white space-y-8 pt-24 px-8 uppercase transform translate-x-full transition-transform duration-500 z-[9999]">
+
+    <div class="absolute top-6 right-6 cursor-pointer" id="closeBtn">
+      <svg viewBox="0 0 32 42" xmlns="http://www.w3.org/2000/svg" width="36" height="36" stroke="white"
         stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"
-        class="transition-all duration-500">
+        class="transition-all duration-500 active">
         <g transform="matrix(1,0,0,1,-389.5,-264.004)">
           <g id="arrow_left2">
             <g transform="matrix(1,0,0,1,0,5)">
@@ -47,39 +74,12 @@
         </g>
       </svg>
     </div>
+
+    <a href="#" class="block hover:text-gray-300">Home</a>
+    <a href="#about" class="block hover:text-gray-300">About</a>
+    <a href="#vision" class="block hover:text-gray-300">Vision</a>
+    <a href="#contact" class="block hover:text-gray-300">Contact</a>
   </div>
-</nav>
-
-<div id="overlay" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[9998]"></div>
-
-<div id="mobileMenu"
-  class="fixed top-0 right-0 h-full w-3/4 bg-black text-white space-y-8 pt-24 px-8 uppercase transform translate-x-full transition-transform duration-500 z-[9999]">
-
-  <div class="absolute top-6 right-6 cursor-pointer" id="closeBtn">
-    <svg viewBox="0 0 32 42" xmlns="http://www.w3.org/2000/svg" width="36" height="36" stroke="white"
-      stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"
-      class="transition-all duration-500 active">
-      <g transform="matrix(1,0,0,1,-389.5,-264.004)">
-        <g id="arrow_left2">
-          <g transform="matrix(1,0,0,1,0,5)">
-            <path id="top"
-              d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967" />
-          </g>
-          <g transform="matrix(1,1.22465e-16,1.22465e-16,-1,0.00024296,564.935)">
-            <path id="bottom"
-              d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967" />
-          </g>
-          <path id="middle" d="M390,284.967L420,284.967" />
-        </g>
-      </g>
-    </svg>
-  </div>
-
-  <a href="#" class="block hover:text-gray-300">Home</a>
-  <a href="#about" class="block hover:text-gray-300">About</a>
-  <a href="#vision" class="block hover:text-gray-300">Vision</a>
-  <a href="#contact" class="block hover:text-gray-300">Contact</a>
-</div>
 
 
 
@@ -93,7 +93,7 @@
     <!-- CHANGE CLR  -->
     <div class="absolute inset-0 flex flex-col md:flex-row">
       <div class="w-full md:w-[35%] h-1/2 md:h-full bg-black"></div>
-      <div class="w-full md:w-[65%] h-1/2 md:h-full bg-[#F97D09]"></div>
+      <div class="w-full md:w-[65%] h-1/2 md:h-full bg-[#FE0000]"></div>
     </div>
 
 
@@ -156,15 +156,15 @@
 
     <!-- CHANGE CONTENT -->
     <h1
-      class="absolute text-[12vw] md:text-[11vw] font-extrabold text-white/30 uppercase tracking-tight text-center select-none md:mt-[-12rem] mt-[-20rem]">
-      I’m ANNAMALAI
+      class="absolute text-[12vw] md:text-[22vw] font-extrabold text-white/30 uppercase tracking-tight text-center select-none md:mt-[-12rem] mt-[-20rem]">
+      I’m EPS
     </h1>
 
 
     <div class="relative z-10 flex flex-col md:flex-row items-center justify-between w-11/12">
       <div class="md:w-1/2 flex justify-center md:justify-end z-40 order-2 md:order-1 max-md:mt-[-5.4rem]">
         <!-- CHANGE IMAGE -->
-        <img src="./static/images/p2.png" alt="Annamalai" class="object-cover w-full md:w-full h-auto md:h-[900px]">
+        <img src="./static/images/eps.png" alt="EPS" class="object-cover w-full md:w-full h-auto md:h-[740px]">
       </div>
       <!-- CHANGE CONTENT -->
       <div class="md:w-1/2 text-white md:pl-10  md:mt-44  md:pt-52 text-center md:text-left order-3 md:order-2">
@@ -183,7 +183,7 @@
   </section>
 
 
-<div id="about"></div>
+  <div id="about"></div>
 
 
 
@@ -197,36 +197,40 @@
 
         <div class="absolute -left-[6rem] sm:-left-8 md:-left-[9%] top-[-4%] md:top-[6%] flex flex-col items-center">
           <!-- CHANGE THIS LINE CLR -->
-          <div class="w-[2px] h-[50px] sm:h-[60px] bg-[#F97D09] mb-16 md:mb-24"></div>
+          <div class="w-[2px] h-[50px] sm:h-[60px] bg-[#FE0000] mb-16 md:mb-24"></div>
 
           <!-- CHANGE NAME -->
           <span
             class="text-xs sm:text-sm tracking-[5px] uppercase text-gray-400 rotate-[-90deg] origin-center mt-[1.5rem] md:mt-2 whitespace-nowrap">
-            About Annamalai
+            About EPS
           </span>
         </div>
 
         <!-- CHANGE NAME, CONTENT, IMAGE -->
         <div class="pl-6 sm:pl-10">
           <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold uppercase mb-4 md:mb-6">
-            About Annamalai
+            About EPS
           </h2>
           <p class="text-gray-600 leading-relaxed mb-4 text-sm sm:text-base">
-            K. Annamalai is an Indian politician, former IPS officer and public servant dedicated to the development
-            and progress of Tamil Nadu. Known for his integrity, discipline and commitment to people’s welfare,
-            he transitioned from a distinguished police vision to public life with a vision to bring transparency
-            and accountability to governance.
+            Edappadi K. Palaniswami, commonly known as EPS, is an Indian politician and former Chief Minister of Tamil
+            Nadu.
+            He is a prominent leader of the All India Anna Dravida Munnetra Kazhagam (AIADMK) party and has played a key
+            role
+            in the political and developmental affairs of the state.
           </p>
           <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-            His inspiring journey from civil service to political leadership reflects his deep passion for empowering
-            citizens and building a stronger Tamil Nadu.
+            Known for his grassroots leadership and administrative experience, EPS has focused on infrastructure
+            development,
+            welfare programs and initiatives to improve the lives of Tamil Nadu’s citizens throughout his political
+            career.
           </p>
         </div>
+
       </div>
 
       <div
         class="reveal-right relative w-full md:w-[48%] bg-white md:-mt-40 flex justify-center items-center z-20 overflow-hidden shadow-md md:mr-44 opacity-0 translate-x-[80px] transition-all duration-1000 ">
-        <img src="./static/images/P5.png" alt="Annamalai" class="w-full h-[550px] object-cover">
+        <img src="./static/images/eps.png" alt="EPS" class="w-full h-[550px] object-cover">
       </div>
 
     </div>
@@ -234,50 +238,53 @@
   <!-- JAVASCRIPT FOR ANIMATION OF ABOUT SECTION IN INDEX PAGE (line no-56) -->
 
 
-<div id="vision"></div>
+  <div id="vision"></div>
 
-<!-- VISION SECTION -->
-<section class="flex flex-col md:flex-row w-full mx-auto items-center justify-center py-20 relative overflow-hidden">
-
-  <div
-    class="vision-image relative md:w-1/2 flex justify-center items-center bg-white opacity-0 scale-95 transition-all duration-1000 ease-out">
-    <div
-      class="absolute inset-0 bg-[radial-gradient(circle,_#d1d5db_1px,_transparent_1px)] bg-[length:20px_20px] opacity-40">
-    </div>
-
-    <img src="./static/images/p8.png" alt="Kevin" class="relative z-10 grayscale object-cover w-[80%] md:w-[70%]">
-  </div>
-
-  <div
-    class="vision-text relative md:w-1/2 px-8 md:px-16 mt-10 md:mt-0 opacity-0 translate-y-10 transition-all duration-1000 ease-out">
-
-    <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-wide text-gray-900 mb-8 leading-snug md:pr-10">
-“ A VISION FOR A STRONG TAMIL NADU. ”
-    </h2>
-
-    <h3 class="text-sm font-bold tracking-[4px] text-gray-500 uppercase mb-4">
-      Vision
-    </h3>
-
-    <p class="text-gray-600 leading-relaxed text-sm md:text-base max-w-md mb-4">
-      <strong>K. Annamalai’s</strong> vision is to build a Tamil Nadu where development and integrity go hand in hand.
-      His dream is to create a future rooted in transparency, equality and opportunity for every citizen - from the
-      bustling cities to the most remote villages. He believes that true progress comes from empowering people through
-      education, technology and honest governance.
-    </p>
-    <p class="text-gray-600 leading-relaxed text-sm md:text-base max-w-md">
-      Guided by his commitment to public service, Annamalai’s vision focuses on strengthening rural infrastructure,
-      supporting farmers, uplifting the youth with skill development and making Tamil Nadu a leader in innovation and
-      sustainable growth. His goal is not just political change - but a transformation that restores faith, unity and
-      pride in the people of Tamil Nadu.
-    </p>
+  <!-- VISION SECTION -->
+  <section class="flex flex-col md:flex-row w-full mx-auto items-center justify-center py-20 relative overflow-hidden">
 
     <div
-      class="absolute right-[-32px] top-[25%]  md:top-1/2 md:right-0 transform -translate-y-1/2 rotate-90 text-xs uppercase tracking-[4px] text-gray-400">
-      Vision
+      class="vision-image relative md:w-1/2 flex justify-center items-center bg-white opacity-0 scale-95 transition-all duration-1000 ease-out">
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle,_#d1d5db_1px,_transparent_1px)] bg-[length:20px_20px] opacity-40">
+      </div>
+
+      <img src="./static/images/p8.png" alt="Kevin" class="relative z-10 grayscale object-cover w-[80%] md:w-[70%]">
     </div>
-  </div>
-</section>
+
+    <div
+      class="vision-text relative md:w-1/2 px-8 md:px-16 mt-10 md:mt-0 opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+
+      <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-wide text-gray-900 mb-8 leading-snug md:pr-10">
+        “ A VISION FOR A STRONG TAMIL NADU. ”
+      </h2>
+
+      <h3 class="text-sm font-bold tracking-[4px] text-gray-500 uppercase mb-4">
+        Vision
+      </h3>
+
+      <p class="text-gray-600 leading-relaxed text-sm md:text-base max-w-md mb-4">
+  <strong>Edappadi K. Palaniswami</strong> envisions a Tamil Nadu where progress, integrity and inclusivity go hand in hand. 
+  His vision is to shape a future built on transparency, equality and opportunity for every citizen - 
+  from vibrant urban centers to the most remote villages. He believes that true growth emerges from 
+  empowering people through education, technology and good governance rooted in honesty and service.
+</p>
+
+<p class="text-gray-600 leading-relaxed text-sm md:text-base max-w-md">
+  Driven by his deep commitment to public service, <strong>EPS</strong> focuses on strengthening rural development, 
+  enhancing agricultural support for farmers, creating opportunities for youth through skill development, 
+  and positioning Tamil Nadu as a national leader in innovation and sustainable growth. 
+  His goal is not merely political progress, but a people-centered transformation that builds unity, 
+  restores faith in governance and instills pride in the hearts of every Tamil.
+</p>
+
+
+      <div
+        class="absolute right-[-32px] top-[25%]  md:top-1/2 md:right-0 transform -translate-y-1/2 rotate-90 text-xs uppercase tracking-[4px] text-gray-400">
+        Vision
+      </div>
+    </div>
+  </section>
 
 
   <!-- JAVASCRIPT FOR ANIMATION OF vision SECTION IN INDEX PAGE (line no-72) -->
@@ -291,7 +298,7 @@
 
     <!-- CHANGE THIS BG CLR  -->
     <div
-      class="relative bg-[#F97D09] md:w-1/2 flex flex-col justify-center text-white px-6 sm:px-10 md:px-20 py-10 md:py-0">
+      class="relative bg-[#FE0000] md:w-1/2 flex flex-col justify-center text-white px-6 sm:px-10 md:px-20 py-10 md:py-0">
 
 
       <div
@@ -310,22 +317,25 @@
 
 
         <!-- CHANGE THE CONTENTS -->
-        <div class="flex items-center  mb-2">
-          <i class="fas fa-calendar-day text-white text-base sm:text-lg"></i>
-          <h3 id="event-title" class="text-lg sm:text-xl font-semibold leading-snug">
-            Youth Empowerment Rally
-          </h3>
-        </div>
+        <div class="flex items-center mb-2">
+  <i class="fas fa-calendar-day text-white text-base sm:text-lg"></i>
+  <h3 id="event-title" class="text-lg sm:text-xl font-semibold leading-snug">
+    “Makkalai Kaappom, Thamizhagathai Meetpom” Statewide Campaign
+  </h3>
+</div>
 
-        <p id="event-date" class="text-gray-200 text-xs sm:text-sm mb-1 leading-snug">
-          Held on October 20, 2025 - Coimbatore
-        </p>
+<p id="event-date" class="text-gray-200 text-xs sm:text-sm mb-1 leading-snug">
+  Held from September 17–26, 2025 – Starting at Dharmapuri, Tamil Nadu
+</p>
 
-        <p id="event-description" class="text-gray-100 text-xs sm:text-sm leading-relaxed">
-          A vibrant gathering led by Annamalai to inspire young minds towards
-          leadership, innovation and community service - promoting unity and
-          progress across Tamil Nadu.
-        </p>
+<p id="event-description" class="text-gray-100 text-xs sm:text-sm leading-relaxed">
+  <strong>Edappadi K. Palaniswami (EPS)</strong> launched the fifth phase of the
+  “Makkalai Kaappom, Thamizhagathai Meetpom” campaign, touring several districts including
+  Dharmapuri, Namakkal, The Nilgiris, Dindigul, and Karur. The initiative aimed to engage
+  directly with citizens, address local development issues, and reinforce the AIADMK’s
+  vision for growth and good governance across Tamil Nadu.
+</p>
+
       </div>
 
       <div
@@ -341,16 +351,19 @@
     <!-- CHANGE IMAGE -->
     <div
       class="relative md:w-1/2 bg-black flex items-center justify-center overflow-hidden min-h-[250px] sm:min-h-[350px] md:min-h-[500px]">
-      <img id="event-image" src="./static/images/meeting.jpg" alt="Annamalai Event"
+      <img id="event-image" src="./static/images/meeting.jpg" alt="EPS Event"
         class="w-full h-full object-cover opacity-90 transition-all duration-500" />
 
       <div class="absolute inset-0 flex items-center justify-center">
         <button class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center transition">
           <!-- CHANGE BELOW BG CLR -->
-          <div
-            class="bg-[#F97D09] hover:bg-orange-400 text-white rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center shadow-lg text-lg sm:text-xl">
-           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.737 4 21.277 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648z"/></svg>
-          </div>
+          <!-- <div
+            class="bg-[#FE0000] hover:bg-orange-400 text-white rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center shadow-lg text-lg sm:text-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.737 4 21.277 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648z" />
+            </svg>
+          </div> -->
         </button>
       </div>
     </div>
@@ -360,100 +373,103 @@
 
 
 
-<!--POLITICAL EXPERIENCE  -->
-<!-- CHANGE CONTENT AND IMAGE -->
-<section class="w-full max-w-7xl mx-auto px-6 md:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+  <!--POLITICAL EXPERIENCE  -->
+  <!-- CHANGE CONTENT AND IMAGE -->
+  <section class="w-full max-w-7xl mx-auto px-6 md:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-  <div class="relative">
-    <img src="./static/images/an2.png" 
-         alt="K Annamalai"
-         class="w-full h-[550px] object-cover ">
-  </div>
+    <div class="relative">
+      <img src="./static/images/an2.png" alt="K EPS" class="w-full h-[550px] object-cover ">
+    </div>
 
-  <div class="flex flex-col justify-center">
-    <div class="mb-6">
-      <p class="text-sm uppercase tracking-widest text-orange-500 mb-2">Political Journey & Public Service</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight uppercase">
-        From IPS Officer to People’s Leader of Tamil Nadu
+    <div class="flex flex-col justify-center">
+      <div class="mb-6">
+        <p class="text-sm uppercase tracking-widest text-orange-500 mb-2">Political Journey & Public Service</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight uppercase">
+          From IPS Officer to People’s Leader of Tamil Nadu
+        </h2>
+      </div>
+
+      <p class="text-gray-700 text-md leading-relaxed mb-5">
+        K. EPS is known for his strong leadership, integrity and unwavering commitment to serving the people.
+        With his remarkable journey from being a distinguished IPS officer to entering active politics, he has inspired
+        thousands across Tamil Nadu through transparent governance and a people-centric approach.
+      </p>
+
+      <p class="text-gray-700 text-md leading-relaxed mb-6">
+        His political career focuses on building trust in governance through accountability, innovation and inclusive
+        development.
+        His efforts have centered on empowering youth, ensuring women’s safety, promoting rural welfare and driving
+        social reform
+        for a stronger and self-reliant Tamil Nadu.
+      </p>
+
+      <div class="mt-8">
+        <h4 class="text-sm font-semibold tracking-wider text-gray-800 mb-3">AREAS OF FOCUS</h4>
+        <div class="text-sm text-gray-100 flex flex-wrap gap-3">
+          <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Rural Development</span>
+          <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Youth Empowerment</span>
+          <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Women Safety</span>
+          <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Public Accountability</span>
+          <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Anti-Corruption</span>
+          <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Social Welfare</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- SCHEMES -->
+
+  <section class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-8">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-12 uppercase">
+        <span class="text-[#FE0000]">Schemes</span> & Social Initiatives
       </h2>
-    </div>
 
-    <p class="text-gray-700 text-md leading-relaxed mb-5">
-      K. Annamalai is known for his strong leadership, integrity and unwavering commitment to serving the people. 
-      With his remarkable journey from being a distinguished IPS officer to entering active politics, he has inspired 
-      thousands across Tamil Nadu through transparent governance and a people-centric approach.
-    </p>
-
-    <p class="text-gray-700 text-md leading-relaxed mb-6">
-      His political career focuses on building trust in governance through accountability, innovation and inclusive development. 
-      His efforts have centered on empowering youth, ensuring women’s safety, promoting rural welfare and driving social reform 
-      for a stronger and self-reliant Tamil Nadu.
-    </p>
-
-    <div class="mt-8">
-      <h4 class="text-sm font-semibold tracking-wider text-gray-800 mb-3">AREAS OF FOCUS</h4>
-      <div class="text-sm text-gray-100 flex flex-wrap gap-3">
-        <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Rural Development</span>
-        <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Youth Empowerment</span>
-        <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Women Safety</span>
-        <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Public Accountability</span>
-        <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Anti-Corruption</span>
-        <span class="bg-orange-500 px-4 py-2 rounded-full shadow-md">Social Welfare</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- SCHEMES -->
-
-<section class="bg-gray-50 py-20">
-  <div class="max-w-7xl mx-auto px-8">
-    <h2 class="text-4xl font-bold text-center text-gray-900 mb-12 uppercase">
-      <span class="text-[#F97D09]">Schemes</span> & Social Initiatives
-    </h2>
-
-    <div class="grid md:grid-cols-3 gap-10">
-      <!-- CHANGE THE CONTENTS AND IMAGES -->
-      <div class="bg-white  overflow-hidden shadow hover:shadow-lg transition duration-300">
-        <img src="./static/images/meeting.jpg" alt="Youth Program" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <p class="text-sm text-gray-400 mb-2">2024</p>
-          <h3 class="font-semibold text-lg mb-2">Youth Empowerment Drive</h3>
-          <p class="text-gray-600 text-sm">
-            A mission to inspire and train young individuals to become active participants
-            in politics, technology and entrepreneurship.
-          </p>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- CHANGE THE CONTENTS AND IMAGES -->
+        <div class="bg-white  overflow-hidden shadow hover:shadow-lg transition duration-300">
+          <img src="./static/images/meeting.jpg" alt="Youth Program" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <p class="text-sm text-gray-400 mb-2">2024</p>
+            <h3 class="font-semibold text-lg mb-2">Youth Empowerment Drive</h3>
+            <p class="text-gray-600 text-sm">
+              A mission to inspire and train young individuals to become active participants
+              in politics, technology and entrepreneurship.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="bg-white  overflow-hidden shadow hover:shadow-lg transition duration-300">
-        <img src="https://th-i.thgim.com/public/incoming/a5huht/article65513329.ece/alternates/LANDSCAPE_1200/IMG_10217_6_6_2022_18_34_3_1_DP9T3FJU.jpg" alt="Farmer Scheme" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <p class="text-sm text-gray-400 mb-2">2023</p>
-          <h3 class="font-semibold text-lg mb-2">Farmer Support Mission</h3>
-          <p class="text-gray-600 text-sm">
-            A statewide campaign focusing on better irrigation, fair pricing and awareness
-            programs for sustainable agriculture.
-          </p>
+        <div class="bg-white  overflow-hidden shadow hover:shadow-lg transition duration-300">
+          <img
+            src="https://th-i.thgim.com/public/incoming/a5huht/article65513329.ece/alternates/LANDSCAPE_1200/IMG_10217_6_6_2022_18_34_3_1_DP9T3FJU.jpg"
+            alt="Farmer Scheme" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <p class="text-sm text-gray-400 mb-2">2023</p>
+            <h3 class="font-semibold text-lg mb-2">Farmer Support Mission</h3>
+            <p class="text-gray-600 text-sm">
+              A statewide campaign focusing on better irrigation, fair pricing and awareness
+              programs for sustainable agriculture.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="bg-white  overflow-hidden shadow hover:shadow-lg transition duration-300">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQV4VHU5owcmgkR3x1xzoCnY0VGCLfghHrcw&s" alt="Women Empowerment" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <p class="text-sm text-gray-400 mb-2">2022</p>
-          <h3 class="font-semibold text-lg mb-2">Women Empowerment Program</h3>
-          <p class="text-gray-600 text-sm">
-            Launched training and microfinance support schemes to promote self-employment
-            among women in rural Tamil Nadu.
-          </p>
+        <div class="bg-white  overflow-hidden shadow hover:shadow-lg transition duration-300">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQV4VHU5owcmgkR3x1xzoCnY0VGCLfghHrcw&s"
+            alt="Women Empowerment" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <p class="text-sm text-gray-400 mb-2">2022</p>
+            <h3 class="font-semibold text-lg mb-2">Women Empowerment Program</h3>
+            <p class="text-gray-600 text-sm">
+              Launched training and microfinance support schemes to promote self-employment
+              among women in rural Tamil Nadu.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- NEWS SECTION -->
@@ -463,12 +479,12 @@
     <aside class="md:col-span-2 flex flex-col space-y-4">
       <h2 class="text-3xl md:text-4xl font-bold uppercase text-black mb-4">News</h2>
       <nav class="flex flex-col space-y-2 text-gray-600 text-sm font-medium">
-        <a href="#" class="text-[#F97D09] font-semibold">Press Updates</a>
-        <a href="#" class="hover:text-[#F97D09]">Event Highlights</a>
-        <a href="#" class="hover:text-[#F97D09]">Public Engagements</a>
+        <a href="#" class="text-[#FE0000] font-semibold">Press Updates</a>
+        <a href="#" class="hover:text-[#FE0000]">Event Highlights</a>
+        <a href="#" class="hover:text-[#FE0000]">Public Engagements</a>
       </nav>
       <button
-        class="mt-4 border border-[#F97D09] text-[#F97D09] px-3 py-1 rounded text-sm hover:bg-[#F97D09] hover:text-white transition">
+        class="mt-4 border border-[#FE0000] text-[#FE0000] px-3 py-1 rounded text-sm hover:bg-[#FE0000] hover:text-white transition">
         View All
       </button>
     </aside>
@@ -477,143 +493,168 @@
     <div class="md:col-span-6 relative">
       <img
         src="data:image/jpeg;base64,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"
-        alt="K Annamalai addressing the public" class=" w-full h-[420px] object-cover">
+        alt="K EPS addressing the public" class=" w-full h-[420px] object-cover">
 
       <div class="absolute bottom-6 left-6 bg-white shadow-xl  p-5 w-[85%]">
         <p class="text-xs uppercase text-gray-500 mb-1">Press Release | 2 days ago</p>
         <h3 class="text-xl font-semibold text-gray-900">
-          K. Annamalai Addresses Youth Gathering on Tamil Nadu’s Development Vision
+          K. EPS Addresses Youth Gathering on Tamil Nadu’s Development Vision
         </h3>
         <div class="flex items-center mt-3 text-sm text-gray-500">
           <img
             src="data:image/jpeg;base64,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"
-            alt="K Annamalai" class="w-7 h-7 rounded-full mr-2">
-          <span>K. Annamalai Office</span>
+            alt="K EPS" class="w-7 h-7 rounded-full mr-2">
+          <span>K. EPS Office</span>
         </div>
       </div>
     </div>
 
     <div class="md:col-span-4 flex flex-col justify-center space-y-6">
       <div>
-        <p class="text-xs uppercase text-[#F97D09] font-medium mb-1">Event Highlights</p>
-        <h4 class="text-gray-800 font-semibold hover:text-[#F97D09] cursor-pointer">
-          K. Annamalai Launches 'People’s Voice' Campaign Across Tamil Nadu
+        <p class="text-xs uppercase text-[#FE0000] font-medium mb-1">Event Highlights</p>
+        <h4 class="text-gray-800 font-semibold hover:text-[#FE0000] cursor-pointer">
+          K. EPS Launches 'People’s Voice' Campaign Across Tamil Nadu
         </h4>
       </div>
 
       <div>
-        <p class="text-xs uppercase text-[#F97D09] font-medium mb-1">Press Updates</p>
-        <h4 class="text-gray-800 font-semibold hover:text-[#F97D09] cursor-pointer">
+        <p class="text-xs uppercase text-[#FE0000] font-medium mb-1">Press Updates</p>
+        <h4 class="text-gray-800 font-semibold hover:text-[#FE0000] cursor-pointer">
           Meeting With Farmers: Focus on Water Management and Rural Growth
         </h4>
       </div>
 
       <div>
-        <p class="text-xs uppercase text-[#F97D09] font-medium mb-1">Public Engagements</p>
-        <h4 class="text-gray-800 font-semibold hover:text-[#F97D09] cursor-pointer">
+        <p class="text-xs uppercase text-[#FE0000] font-medium mb-1">Public Engagements</p>
+        <h4 class="text-gray-800 font-semibold hover:text-[#FE0000] cursor-pointer">
           Youth Connect Program Encourages Leadership and Innovation in Tamil Nadu
         </h4>
       </div>
     </div>
   </section>
 
-<div id="contact"></div>
+  <div id="contact"></div>
 
-<section class="w-full bg-white py-16 sm:py-20 px-4 sm:px-6 md:px-12 lg:px-20">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 overflow-hidden shadow-lg rounded-lg">
-    
-    <div class="bg-[#F97D09] text-white p-8 sm:p-10 md:p-14 relative">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 uppercase">Contact Information</h2>
-      <p class="text-white/90 mb-10 text-sm sm:text-base leading-relaxed">
-        Get in touch with our campaign office. We’ll respond to your queries and suggestions within 24 hours.
-      </p>
+  <section class="w-full bg-white py-16 sm:py-20 px-4 sm:px-6 md:px-12 lg:px-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 overflow-hidden shadow-lg rounded-lg">
 
-      <ul class="space-y-6 text-sm sm:text-base">
-        <li class="flex items-start gap-3">
-          <span class="text-xl sm:text-2xl flex-shrink-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3"/></svg>
-          </span>
-          <span>+91 98765 43210</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-xl sm:text-2xl flex-shrink-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z"/></svg>
-          </span>
-          <span>contact@leadername.in</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-xl sm:text-2xl flex-shrink-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" fill-rule="evenodd" d="M11.262 22.134S4 16.018 4 10a8 8 0 1 1 16 0c0 6.018-7.262 12.134-7.262 12.134c-.404.372-1.069.368-1.476 0M12 13.5a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7"/></svg>
-          </span>
-          <span>Leader’s Office, Chennai, Tamil Nadu</span>
-        </li>
-      </ul>
+      <div class="bg-[#FE0000] text-white p-8 sm:p-10 md:p-14 relative">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 uppercase">Contact Information</h2>
+        <p class="text-white/90 mb-10 text-sm sm:text-base leading-relaxed">
+          Get in touch with our campaign office. We’ll respond to your queries and suggestions within 24 hours.
+        </p>
 
-      <div class="absolute bottom-0 right-0 translate-x-8 translate-y-8 hidden sm:block">
-        <div class="w-32 h-32 bg-white/20 rounded-full absolute bottom-10 right-10"></div>
-        <div class="w-20 h-20 bg-white/30 rounded-full absolute bottom-20 right-24"></div>
+        <ul class="space-y-6 text-sm sm:text-base">
+          <li class="flex items-start gap-3">
+            <span class="text-xl sm:text-2xl flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#fff"
+                  d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3" />
+              </svg>
+            </span>
+            <span>+91 98765 43210</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-xl sm:text-2xl flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#fff"
+                  d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z" />
+              </svg>
+            </span>
+            <span>contact@leadername.in</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-xl sm:text-2xl flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#fff" fill-rule="evenodd"
+                  d="M11.262 22.134S4 16.018 4 10a8 8 0 1 1 16 0c0 6.018-7.262 12.134-7.262 12.134c-.404.372-1.069.368-1.476 0M12 13.5a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7" />
+              </svg>
+            </span>
+            <span>Leader’s Office, Chennai, Tamil Nadu</span>
+          </li>
+        </ul>
+
+        <div class="absolute bottom-0 right-0 translate-x-8 translate-y-8 hidden sm:block">
+          <div class="w-32 h-32 bg-white/20 rounded-full absolute bottom-10 right-10"></div>
+          <div class="w-20 h-20 bg-white/30 rounded-full absolute bottom-20 right-24"></div>
+        </div>
+
+        <div class="mt-10 sm:mt-0 sm:absolute sm:bottom-6 sm:left-10 flex gap-5">
+          <a href="#" class="hover:opacity-80 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02" />
+            </svg>
+          </a>
+          <a href="#" class="hover:opacity-80 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.9 2.9 0 0 0-1.08.703a2.9 2.9 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.9 2.9 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.9 2.9 0 0 0-.703-1.08a2.9 2.9 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4" />
+            </svg>
+          </a>
+          <a href="#" class="hover:opacity-80 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M10.488 14.651L15.25 21h7l-7.858-10.478L20.93 3h-2.65l-5.117 5.886L8.75 3h-7l7.51 10.015L2.32 21h2.65zM16.25 19L5.75 5h2l10.5 14z" />
+            </svg>
+          </a>
+        </div>
       </div>
 
-      <div class="mt-10 sm:mt-0 sm:absolute sm:bottom-6 sm:left-10 flex gap-5">
-        <a href="#" class="hover:opacity-80 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#fff" d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02"/></svg>
-        </a>
-        <a href="#" class="hover:opacity-80 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#fff" d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.9 2.9 0 0 0-1.08.703a2.9 2.9 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.9 2.9 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.9 2.9 0 0 0-.703-1.08a2.9 2.9 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4"/></svg>
-        </a>
-        <a href="#" class="hover:opacity-80 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#fff" d="M10.488 14.651L15.25 21h7l-7.858-10.478L20.93 3h-2.65l-5.117 5.886L8.75 3h-7l7.51 10.015L2.32 21h2.65zM16.25 19L5.75 5h2l10.5 14z"/></svg>
-        </a>
+      <div class="bg-white p-8 sm:p-10 md:p-14">
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm text-gray-700">First Name</label>
+              <input type="text" placeholder="Your first name"
+                class="w-full border-b border-gray-300 focus:border-[#FE0000] outline-none py-2 text-sm text-gray-700" />
+            </div>
+            <div>
+              <label class="block text-sm text-gray-700">Last Name</label>
+              <input type="text" placeholder="Your last name"
+                class="w-full border-b border-gray-300 focus:border-[#FE0000] outline-none py-2 text-sm text-gray-700" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm text-gray-700">Email</label>
+              <input type="email" placeholder="yourname@email.com"
+                class="w-full border-b border-gray-300 focus:border-[#FE0000] outline-none py-2 text-sm text-gray-700" />
+            </div>
+            <div>
+              <label class="block text-sm text-gray-700">Phone</label>
+              <input type="text" placeholder="+91 98765 43210"
+                class="w-full border-b border-gray-300 focus:border-[#FE0000] outline-none py-2 text-sm text-gray-700" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-700">City</label>
+            <input type="text" placeholder="Enter your city"
+              class="w-full border-b border-gray-300 focus:border-[#FE0000] outline-none py-2 text-sm text-gray-700" />
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-700">Message</label>
+            <textarea rows="3" placeholder="Write your message..."
+              class="w-full border-b border-gray-300 focus:border-[#FE0000] outline-none py-2 text-sm text-gray-700 resize-none"></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button
+              class="bg-[#FE0000] text-white px-8 py-3 rounded-lg text-sm font-medium hover:bg-[#d96a06] transition-all duration-300">
+              Send Message
+            </button>
+          </div>
+        </form>
       </div>
     </div>
-
-    <div class="bg-white p-8 sm:p-10 md:p-14">
-      <form class="space-y-6">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div>
-            <label class="block text-sm text-gray-700">First Name</label>
-            <input type="text" placeholder="Your first name" class="w-full border-b border-gray-300 focus:border-[#F97D09] outline-none py-2 text-sm text-gray-700" />
-          </div>
-          <div>
-            <label class="block text-sm text-gray-700">Last Name</label>
-            <input type="text" placeholder="Your last name" class="w-full border-b border-gray-300 focus:border-[#F97D09] outline-none py-2 text-sm text-gray-700" />
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div>
-            <label class="block text-sm text-gray-700">Email</label>
-            <input type="email" placeholder="yourname@email.com" class="w-full border-b border-gray-300 focus:border-[#F97D09] outline-none py-2 text-sm text-gray-700" />
-          </div>
-          <div>
-            <label class="block text-sm text-gray-700">Phone</label>
-            <input type="text" placeholder="+91 98765 43210" class="w-full border-b border-gray-300 focus:border-[#F97D09] outline-none py-2 text-sm text-gray-700" />
-          </div>
-        </div>
-
-        <div>
-          <label class="block text-sm text-gray-700">City</label>
-          <input type="text" placeholder="Enter your city" class="w-full border-b border-gray-300 focus:border-[#F97D09] outline-none py-2 text-sm text-gray-700" />
-        </div>
-
-        <div>
-          <label class="block text-sm text-gray-700">Message</label>
-          <textarea rows="3" placeholder="Write your message..." class="w-full border-b border-gray-300 focus:border-[#F97D09] outline-none py-2 text-sm text-gray-700 resize-none"></textarea>
-        </div>
-
-        <div class="pt-2">
-          <button class="bg-[#F97D09] text-white px-8 py-3 rounded-lg text-sm font-medium hover:bg-[#d96a06] transition-all duration-300">
-            Send Message
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- FOOTER -->
-  <footer class="bg-[#F97D09] text-white py-8">
+  <footer class="bg-[#FE0000] text-white py-8">
     <div
       class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-6 px-6 text-sm text-center md:text-left">
 
