@@ -3,7 +3,7 @@
     const navbar = document.getElementById("navbar");
     if (window.scrollY > 100) {
       navbar.classList.add(
-        "bg-[#F97D09]/50",   
+        "bg-[#FD000080]",   
         "backdrop-blur-md", 
         "shadow-lg",
         "transition-all",
@@ -13,7 +13,7 @@
     } else {
       navbar.classList.add("bg-transparent");
       navbar.classList.remove(
-        "bg-[#F97D09]/50",
+        "bg-[#FD000080]",
         "backdrop-blur-md",
         "shadow-lg"
       );
@@ -133,31 +133,30 @@ document.addEventListener("DOMContentLoaded", () => {
     title: "Launch of Phase-5 – ‘Makkalai Kaappom, Thamizhagathai Meetpom’ Statewide Yatra",
     date: "Held from September 17 – 26, 2025 – starting at Dharmapuri (TN)",
     description:
-      "EPS launched the fifth phase of his statewide campaign ‘Makkalai Kaappom, Thamizhagathai Meetpom’ covering Dharmapuri, Namakkal, The Nilgiris, Dindigul and Karur districts through 19 public meetings — aiming to engage with citizens across Tamil Nadu and reinforce his party’s development agenda. :contentReference[oaicite:1]{index=1}",
-    image: "./static/images/statewide_yatra.jpg",
+      "EPS launched the fifth phase of his statewide campaign ‘Makkalai Kaappom, Thamizhagathai Meetpom’ covering Dharmapuri, Namakkal, The Nilgiris, Dindigul and Karur districts through 19 public meetings - aiming to engage with citizens across Tamil Nadu and reinforce his party’s development agenda.",
+    image: "./static/images/meeting.jpg",
   },
   {
     title: "Meeting with Union Home Minister Amit Shah in Delhi",
     date: "September 16, 2025 – New Delhi",
     description:
-      "EPS along with senior leaders of his party met Amit Shah in Delhi — publicly positioning the agenda for Tamil Nadu and clarifying his firm stance regarding internal party unity ahead of the 2026 Assembly elections. :contentReference[oaicite:3]{index=3}",
-    image: "./static/images/eps_delhi_meet.jpg",
+      "EPS along with senior leaders of his party met Amit Shah in Delhi - publicly positioning the agenda for Tamil Nadu and clarifying his firm stance regarding internal party unity ahead of the 2026 Assembly elections. ",
+    image: "./static/images/meeting2.png",
   },
   {
     title: "Public Rally at Thiruparankundram – Madurai (Property-Tax Scam Exposé)",
     date: "September 2, 2025 – Madurai",
     description:
-      "During his campaign tour in Madurai, EPS addressed a rally in Thiruparankundram and alleged the ruling party was shielding the mayor in a large property-tax scam; he pledged a transparent investigation if his party returns to power. :contentReference[oaicite:4]{index=4}",
-    image: "./static/images/madurai_rally.jpg",
+      "During his campaign tour in Madurai, EPS addressed a rally in Thiruparankundram and alleged the ruling party was shielding the mayor in a large property-tax scam; he pledged a transparent investigation if his party returns to power. ",
+    image: "./static/images/meeting3.jpg",
   },
   {
-  title: "AIADMK Public Meeting – Salem District Development Rally",
-  date: "October 5, 2025 – Salem, Tamil Nadu",
-  description:
-    "Edappadi K. Palaniswami (EPS) addressed a massive public gathering in his home district of Salem, emphasizing infrastructure expansion, industrial growth, and rural employment opportunities. He reaffirmed his commitment to transparent governance and inclusive development across Tamil Nadu.",
-  image: "./static/images/salem_public_meet.jpg",
-},
-
+    title: "Tribute Ceremony – 68th Death Anniversary of Immanuel Sekaran",
+    date: "September 12, 2025 – Paramakudi",
+    description:
+      "EPS joined leaders across parties in paying tribute to Immanuel Sekaran on his death anniversary, highlighting social justice and harmony in Tamil Nadu.",
+    image: "./static/images/meeting4.png",
+  },
 ];
 
     let currentIndex = 0;
